@@ -283,22 +283,16 @@ function get_estimated_time()
 
 }
 
-if (get_option('licence_sidebar')) {
+add_action( 'wp_head', 'of_stylesheet' );
 
-	add_action( 'wp_head', 'of_stylesheet' );
+// Re-define the options-framework URL
+define( 'OPTIONS_FRAMEWORK_URL', get_template_directory_uri() . '/inc/options-framework/' );
 
-	// Re-define the options-framework URL
-	define( 'OPTIONS_FRAMEWORK_URL', get_template_directory_uri() . '/inc/options-framework/' );
-
-	// Load the Options Framework Plugin
-	if ( !function_exists( 'optionsframework_init' ) ) {
-	    define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory() . '/inc/options-framework/' );
-	    require_once OPTIONS_FRAMEWORK_DIRECTORY . 'options-framework.php';
-	}
-
-	require get_template_directory() . '/inc/Theme-Updater/updater.php';
-
-}else{
-	require_once 'inc/licence.php';
+// Load the Options Framework Plugin
+if ( !function_exists( 'optionsframework_init' ) ) {
+    define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory() . '/inc/options-framework/' );
+    require_once OPTIONS_FRAMEWORK_DIRECTORY . 'options-framework.php';
 }
+
+require get_template_directory() . '/inc/Theme-Updater/updater.php';
 
