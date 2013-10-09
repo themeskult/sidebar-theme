@@ -277,7 +277,7 @@ function of_stylesheet() {
 	body{
 		color: <?php echo $theme_options['text_color']; ?>
 	}
-	h1,h2,h3,h4,h5,h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	h1,h2,h3,h4,h5,h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body article .entry-header .entry-title{
 		color: <?php echo $theme_options['titles_color']; ?>
 	}
 	

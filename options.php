@@ -108,21 +108,21 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('Site Color', 'options_check'),
-		'desc' => __('No color selected by default.', 'options_check'),
+		'desc' => __('Select a color for the main sidebar.', 'options_check'),
 		'id' => 'site_color',
 		'std' => '#f74c42',
 		'type' => 'color' );
 
 	$options[] = array(
 		'name' => __('Titles Color', 'options_check'),
-		'desc' => __('No color selected by default.', 'options_check'),
+		'desc' => __('Color assigned for titles.', 'options_check'),
 		'id' => 'titles_color',
-		'std' => '#000',
+		'std' => '#000000',
 		'type' => 'color' );
 
 	$options[] = array(
 		'name' => __('Text Color', 'options_check'),
-		'desc' => __('No color selected by default.', 'options_check'),
+		// 'desc' => __('No color selected by default.', 'options_check'),
 		'id' => 'text_color',
 		'std' => '#4d4d4d',
 		'type' => 'color' );
