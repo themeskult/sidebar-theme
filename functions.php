@@ -263,7 +263,7 @@ function get_estimated_time()
 	return $est;
 
 }
-// add_action( 'wp_head', 'of_stylesheet' );
+add_action( 'wp_head', 'of_stylesheet' );
 
 // Re-define the options-framework URL
 define( 'OPTIONS_FRAMEWORK_URL', get_template_directory_uri() . '/inc/options-framework/' );
@@ -274,10 +274,21 @@ if ( !function_exists( 'optionsframework_init' ) ) {
     require_once OPTIONS_FRAMEWORK_DIRECTORY . 'options-framework.php';
 }
 
-require get_template_directory() . '/inc/Theme-Updater/updater.php';
+if (3==4) {
+	require get_template_directory() . '/inc/Theme-Updater/updater.php';
+}
+
+	require get_template_directory() . '/inc/Theme-Updater/updater.php';
 
 
+// THIS GIVES US SOME OPTIONS FOR STYLING THE ADMIN AREA
+function custom_colors() { ?>
+		<style type="text/css">
+           .nmi-current-image{background:#333; padding: 10px; display: inline-block;}
+         </style>
+<?php }
 
+add_action('admin_head', 'custom_colors');
 
 
 
