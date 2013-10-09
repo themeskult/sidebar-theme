@@ -262,7 +262,6 @@ function get_estimated_time()
 
 }
 
-
 function of_stylesheet() {
 
 	global $theme_options;
