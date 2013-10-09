@@ -30,21 +30,6 @@
 	$options = array();
 	$options = get_option ( 'sidebar_options' ); 
 
-	$color = '#f7010e';
-
-	if (get_option ( 'sidebar_options' )) {
-
-		if( isset( $options['color'] ) && '' != $options['color'] )
-			$color = $options['color'];
-
-		echo $options['google_analytics'];
-
-	}else{
-		$color = get_option ( 'theme_color' );
-		$options['github_username'] = get_option ( 'github_username' );
-		$options['contact_email'] = get_bloginfo('admin_email');
-	}
-
 ?>
 
 <style type="text/css" media="screen">

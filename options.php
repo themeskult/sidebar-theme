@@ -110,7 +110,7 @@ function optionsframework_options() {
 		'name' => __('Site Color', 'options_check'),
 		'desc' => __('No color selected by default.', 'options_check'),
 		'id' => 'site_color',
-		'std' => '#feb83e',
+		'std' => '#f74c42',
 		'type' => 'color' );
 
 	$options[] = array(
@@ -127,39 +127,39 @@ function optionsframework_options() {
 		'std' => '#4d4d4d',
 		'type' => 'color' );
 
-	$options[] = array(
-		'name' =>  __('Background', 'options_check'),
-		'desc' => __('Change the background CSS.', 'options_check'),
-		'id' => 'background',
-		'std' => $background_defaults,
-		'type' => 'background' );
+	// $options[] = array(
+	// 	'name' =>  __('Background', 'options_check'),
+	// 	'desc' => __('Change the background CSS.', 'options_check'),
+	// 	'id' => 'background',
+	// 	'std' => $background_defaults,
+	// 	'type' => 'background' );
 
-	$options[] = array(
-		'name' => __('Header Image', 'options_check'),
-		'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
-		'id' => 'header_background_image',
-		'type' => 'upload');
+	// $options[] = array(
+	// 	'name' => __('Header Image', 'options_check'),
+	// 	'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
+	// 	'id' => 'header_background_image',
+	// 	'type' => 'upload');
 
-	$options[] = array(
-		'name' => __('Navigation Background Color', 'options_check'),
-		'desc' => __('No color selected by default.', 'options_check'),
-		'id' => 'navigation_background_color',
-		'std' => '#f1f1f1',
-		'type' => 'color' );
+	// $options[] = array(
+	// 	'name' => __('Navigation Background Color', 'options_check'),
+	// 	'desc' => __('No color selected by default.', 'options_check'),
+	// 	'id' => 'navigation_background_color',
+	// 	'std' => '#f1f1f1',
+	// 	'type' => 'color' );
 
-	$options[] = array(
-		'name' => __('Navigation Text Color', 'options_check'),
-		'desc' => __('No color selected by default.', 'options_check'),
-		'id' => 'navigation_text_color',
-		'std' => '#333',
-		'type' => 'color' );
+	// $options[] = array(
+	// 	'name' => __('Navigation Text Color', 'options_check'),
+	// 	'desc' => __('No color selected by default.', 'options_check'),
+	// 	'id' => 'navigation_text_color',
+	// 	'std' => '#333',
+	// 	'type' => 'color' );
 
 
-	$options[] = array(
-		'name' => __('Footer Text', 'options_check'),
-		'id' => 'footer_text',
-		'std' => 'Footer Text',
-		'type' => 'text');
+	// $options[] = array(
+	// 	'name' => __('Footer Text', 'options_check'),
+	// 	'id' => 'footer_text',
+	// 	'std' => 'Footer Text',
+	// 	'type' => 'text');
 	
 	return $options;
 }

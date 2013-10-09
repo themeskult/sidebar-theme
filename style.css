@@ -269,126 +269,104 @@ body .page-title {
 body article.page {
   margin-top: 30px;
 }
-body article.post,
-body article.page {
+body article {
   width: 580px;
   margin: auto;
   padding-bottom: 100px;
   font-size: 110%;
 }
-body article.post a,
-body article.page a {
+body article a {
   color: #000;
 }
-body article.post .entry-header,
-body article.page .entry-header {
+body article .entry-header {
   border-radius: 3px;
   margin-bottom: 30px;
 }
-body article.post .entry-header .entry-meta,
-body article.page .entry-header .entry-meta {
+body article .entry-header .entry-meta {
   opacity: 0.6;
   font-size: 13px;
 }
-body article.post .entry-header .entry-title,
-body article.page .entry-header .entry-title {
+body article .entry-header .entry-title {
   margin: 50px 0 16px 0;
   font-size: 56px;
   line-height: 66px;
   color: #000;
 }
-body article.post .entry-header .entry-title a,
-body article.page .entry-header .entry-title a {
+body article .entry-header .entry-title a {
   color: #000;
   position: relative;
   display: inline-block;
 }
-body article.post .entry-header .entry-title a:hover,
-body article.page .entry-header .entry-title a:hover {
+body article .entry-header .entry-title a:hover {
   color: #2a94ca;
 }
-body article.post .entry-header .entry-title.link a.anchor img,
-body article.page .entry-header .entry-title.link a.anchor img {
+body article .entry-header .entry-title.link a.anchor img {
   height: 18px;
   width: 18px;
   margin-top: -5px;
   margin-left: 6px;
   opacity: 0.3;
 }
-body article.post .entry-header .entry-title.link a.title,
-body article.page .entry-header .entry-title.link a.title {
+body article .entry-header .entry-title.link a.title {
   border-bottom: 1px solid #ccc;
   display: inline-block;
 }
-body article.post .entry-header .entry-title.link a:hover span,
-body article.page .entry-header .entry-title.link a:hover span {
+body article .entry-header .entry-title.link a:hover span {
   border-color: #666;
 }
-body article.post .entry-header .entry-title.link a.anchor:hover img,
-body article.page .entry-header .entry-title.link a.anchor:hover img {
+body article .entry-header .entry-title.link a.anchor:hover img {
   opacity: 1;
 }
-body article.post blockquote,
-body article.page blockquote {
+body article blockquote {
   border-left: 8px solid #222;
   color: #666;
   padding: 0 0 0 20px;
 }
-body article.post blockquote p:last-child,
-body article.page blockquote p:last-child {
+body article blockquote p:last-child {
   margin-bottom: 0;
 }
-body article.post .entry-content a,
-body article.page .entry-content a {
+body article .entry-content {
+  line-height: 1.5;
+}
+body article .entry-content a {
   font-weight: normal;
   color: #000;
   padding-bottom: 0px;
   border-bottom: 1px solid #ccc;
 }
-body article.post .entry-content a.view,
-body article.page .entry-content a.view {
+body article .entry-content a.view {
   border: 0;
 }
-body article.post .entry-content a:hover,
-body article.page .entry-content a:hover {
+body article .entry-content a:hover {
   border-color: #333;
 }
-body article.post p iframe,
-body article.page p iframe,
-body article.post p object,
-body article.page p object {
+body article p iframe,
+body article p object {
   display: block;
   margin: 0;
   padding: 0;
   width: 100%;
   float: none;
 }
-body article.post img,
-body article.page img,
-body article.post iframe,
-body article.page iframe,
-body article.post object,
-body article.page object {
+body article img,
+body article iframe,
+body article object {
   display: block;
   margin: 0;
   padding: 0;
   max-width: 100%;
   float: none;
 }
-body article.post p iframe,
-body article.page p iframe,
-body article.post p object,
-body article.page p object {
+body article p iframe,
+body article p object {
   min-height: 250px;
   min-width: 0;
 }
-body article.post img,
-body article.page img {
+body article img {
   height: auto;
   width: auto;
 }
-body article.post .embed-container,
-body article.page .embed-container {
+body article .embed-container {
   position: relative;
   padding-bottom: 56.25%;
 /* 16/9 ratio */
@@ -398,22 +376,17 @@ body article.page .embed-container {
   overflow: hidden;
   margin-bottom: 30px;
 }
-body article.post .embed-container iframe,
-body article.page .embed-container iframe,
-body article.post .embed-container object,
-body article.page .embed-container object,
-body article.post .embed-container embed,
-body article.page .embed-container embed {
+body article .embed-container iframe,
+body article .embed-container object,
+body article .embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-body article.post code,
-body article.page code,
-body article.post pre,
-body article.page pre {
+body article code,
+body article pre {
   border: none;
   background-color: #f8f8f8;
   padding: 0 4px;
@@ -422,8 +395,7 @@ body article.page pre {
   font-family: monospace, serif;
   display: inline-block;
 }
-body article.post pre.prettyprint,
-body article.page pre.prettyprint {
+body article pre.prettyprint {
   white-space: pre-wrap;
   word-wrap: break-word;
   line-height: 2em;
@@ -433,39 +405,32 @@ body article.page pre.prettyprint {
   display: block;
   border: 1px solid #d2d2d2;
 }
-body article.post code,
-body article.page code {
+body article code {
   border-radius: 4px;
   border: 0;
   border-radius: 0;
 }
-body article.post hr,
-body article.page hr {
+body article hr {
   border-width: 3px;
 }
-body article.post strong,
-body article.page strong {
+body article strong {
   background-color: #fde482;
   font-weight: bold;
 }
-body article.post em,
-body article.page em {
+body article em {
   font-style: italic;
 }
-body article.post .tk-sharing,
-body article.page .tk-sharing {
+body article .tk-sharing {
   display: block;
   width: 100px;
   min-height: 140px;
   font-size: 11px;
 }
-body article.post .tk-sharing:hover a.tk-share-button,
-body article.page .tk-sharing:hover a.tk-share-button {
+body article .tk-sharing:hover a.tk-share-button {
   color: #333;
   border-color: #333;
 }
-body article.post .tk-sharing a.tk-share-button,
-body article.page .tk-sharing a.tk-share-button {
+body article .tk-sharing a.tk-share-button {
   border: 1px solid #ccc;
   color: #999;
   text-transform: uppercase;
@@ -474,8 +439,7 @@ body article.page .tk-sharing a.tk-share-button {
   border-radius: 3px;
   display: inline-block;
 }
-body article.post .tk-sharing .tk-share-content,
-body article.page .tk-sharing .tk-share-content {
+body article .tk-sharing .tk-share-content {
   border: 1px solid #ccc;
   display: none;
   position: relative;
@@ -483,45 +447,37 @@ body article.page .tk-sharing .tk-share-content {
   width: 90px;
   border-radius: 3px;
 }
-body article.post .tk-sharing .tk-share-content i,
-body article.page .tk-sharing .tk-share-content i {
+body article .tk-sharing .tk-share-content i {
   border: 6px solid transparent;
   position: absolute;
   border-bottom-color: #ccc;
   top: -12px;
   left: 10px;
 }
-body article.post .tk-sharing .tk-share-content a,
-body article.page .tk-sharing .tk-share-content a {
+body article .tk-sharing .tk-share-content a {
   display: block;
   line-height: 24px;
   padding: 0 10px;
 }
-body article.post .tk-sharing .tk-share-content a:hover,
-body article.page .tk-sharing .tk-share-content a:hover {
+body article .tk-sharing .tk-share-content a:hover {
   color: #222;
   background: #f1f1f1;
   border-bottom-color: inherit;
 }
-body article.post .tk-sharing .tk-share-content a.tk-share-twitter,
-body article.page .tk-sharing .tk-share-content a.tk-share-twitter {
+body article .tk-sharing .tk-share-content a.tk-share-twitter {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-body article.post .tk-sharing .tk-share-content a:last-child,
-body article.page .tk-sharing .tk-share-content a:last-child {
+body article .tk-sharing .tk-share-content a:last-child {
   border: 0;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-body article.post .tk-sharing:hover .tk-share-content,
-body article.page .tk-sharing:hover .tk-share-content {
+body article .tk-sharing:hover .tk-share-content {
   display: block;
 }
-body article.post .cat-links,
-body article.page .cat-links,
-body article.post .tags-links,
-body article.page .tags-links {
+body article .cat-links,
+body article .tags-links {
   display: block;
   margin-bottom: 20px;
   font-size: 12px;
@@ -531,18 +487,14 @@ body article.page .tags-links {
   background-repeat: no-repeat;
   padding-left: 24px;
 }
-body article.post .cat-links a,
-body article.page .cat-links a,
-body article.post .tags-links a,
-body article.page .tags-links a {
+body article .cat-links a,
+body article .tags-links a {
   color: #000;
 }
-body article.post .cat-links,
-body article.page .cat-links {
+body article .cat-links {
   background-image: url("img/icon-folder.png");
 }
-body article.post .tags-links,
-body article.page .tags-links {
+body article .tags-links {
   background-image: url("img/icon-tag.png");
 }
 /* Specific styles for home & single

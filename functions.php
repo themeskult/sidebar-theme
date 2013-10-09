@@ -90,9 +90,7 @@ function sidebar_scripts() {
 
 	$options = get_option( 'sidebar_options' ); 
 
-	if ($options['droid_serif'] == 1) {
-		wp_enqueue_style( 'fonts',  "http://fonts.googleapis.com/css?family=Droid+Serif:regular,regularitalic,bold,bolditalic");
-	}
+	wp_enqueue_style( 'fonts',  "http://fonts.googleapis.com/css?family=Droid+Serif:regular,regularitalic,bold,bolditalic");
 	
 	// Stylesheets
 	wp_enqueue_style( 'normalize', '//normalize-css.googlecode.com/svn/trunk/normalize.css');
@@ -263,6 +261,32 @@ function get_estimated_time()
 	return $est;
 
 }
+
+
+function of_stylesheet() {
+
+	global $theme_options;
+	$themename = get_option( 'stylesheet' );
+	$themename = preg_replace("/\W/", "_", strtolower($themename) );
+	$theme_options = get_option ($themename);
+
+	$color = $theme_options['site_color'];
+
+    ?>
+    <style type="text/css">
+	body{
+		color: <?php echo $theme_options['text_color']; ?>
+	}
+	h1,h2,h3,h4,h5,h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+		color: <?php echo $theme_options['titles_color']; ?>
+	}
+	
+	#sidebar{background: <?php echo $theme_options['site_color'] ?>;}
+
+    </style>
+    <?php
+}
+
 add_action( 'wp_head', 'of_stylesheet' );
 
 // Re-define the options-framework URL
@@ -274,12 +298,7 @@ if ( !function_exists( 'optionsframework_init' ) ) {
     require_once OPTIONS_FRAMEWORK_DIRECTORY . 'options-framework.php';
 }
 
-if (3==4) {
-	require get_template_directory() . '/inc/Theme-Updater/updater.php';
-}
-
-	require get_template_directory() . '/inc/Theme-Updater/updater.php';
-
+require get_template_directory() . '/inc/Theme-Updater/updater.php';
 
 // THIS GIVES US SOME OPTIONS FOR STYLING THE ADMIN AREA
 function custom_colors() { ?>
