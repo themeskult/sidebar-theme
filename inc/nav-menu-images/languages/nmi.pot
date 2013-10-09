@@ -1,0 +1,71 @@
+# Copyright (C) 2013 Nav Menu Images
+# This file is distributed under the same license as the Nav Menu Images package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nav Menu Images 3.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/nav-menu-images\n"
+"POT-Creation-Date: 2013-03-26 16:01:26+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: inc/admin.php:83
+msgid ""
+"You need to set an image as a featured image to be able to use it as an menu "
+"item image"
+msgstr ""
+
+#: inc/admin.php:167 inc/walker.php:84
+msgid "Upload menu item image"
+msgstr ""
+
+#: inc/admin.php:174 inc/walker.php:75
+msgid "Change menu item image"
+msgstr ""
+
+#: inc/admin.php:176 inc/walker.php:80
+msgid "Remove menu item image"
+msgstr ""
+
+#: inc/admin.php:221
+msgid "Used on hover?"
+msgstr ""
+
+#: inc/admin.php:225
+msgid "Should this image be used on hover"
+msgstr ""
+
+#: inc/admin.php:235
+msgid "Used when active?"
+msgstr ""
+
+#: inc/admin.php:239
+msgid "Should this image be used when menu item is active"
+msgstr ""
+
+#: nav-menu-images.php:320
+msgid "Donate"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Nav Menu Images"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://blog.milandinic.com/wordpress/plugins/nav-menu-images/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Display image as a menu content."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Milan Dinić"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://blog.milandinic.com/"
+msgstr ""

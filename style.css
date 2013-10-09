@@ -7,439 +7,6 @@ Github Theme URI: https://github.com/themeskult/sidebar-theme
 Version: 1.4.1
 Description: Sidebar is a tight, visually clean and well-structured theme that allows you to focus on reading.
 */
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* #Basic Styles
-================================================== */
-body {
-  background: #fff;
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #444;
-  -webkit-font-smoothing: antialiased;
-/* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%;
-}
-/* #Typography
-================================================== */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #181818;
-  font-family: "Georgia", "Times New Roman", serif;
-  font-weight: normal;
-}
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  font-weight: inherit;
-}
-h1 {
-  font-size: 46px;
-  line-height: 50px;
-  margin-bottom: 14px;
-}
-h2 {
-  font-size: 35px;
-  line-height: 40px;
-  margin-bottom: 10px;
-}
-h3 {
-  font-size: 28px;
-  line-height: 34px;
-  margin-bottom: 8px;
-}
-h4 {
-  font-size: 21px;
-  line-height: 30px;
-  margin-bottom: 4px;
-}
-h5 {
-  font-size: 17px;
-  line-height: 24px;
-}
-h6 {
-  font-size: 14px;
-  line-height: 21px;
-}
-.subheader {
-  color: #777;
-}
-p {
-  margin: 0 0 20px 0;
-}
-p img {
-  margin: 0;
-}
-p.lead {
-  font-size: 21px;
-  line-height: 27px;
-  color: #777;
-}
-em {
-  font-style: italic;
-}
-strong {
-  font-weight: bold;
-  color: #333;
-}
-small {
-  font-size: 80%;
-}
-/*	Blockquotes  */
-blockquote,
-blockquote p {
-  font-size: 17px;
-  line-height: 24px;
-  color: #777;
-  font-style: italic;
-}
-blockquote {
-  margin: 0 0 20px;
-  padding: 9px 20px 0 19px;
-  border-left: 1px solid #ddd;
-}
-blockquote cite {
-  display: block;
-  font-size: 12px;
-  color: #555;
-}
-blockquote cite:before {
-  content: "\2014 \0020";
-}
-blockquote cite a,
-blockquote cite a:visited,
-blockquote cite a:visited {
-  color: #555;
-}
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0;
-}
-/* #Links
-================================================== */
-a,
-a:visited {
-  color: #333;
-  text-decoration: underline;
-  outline: 0;
-}
-a:hover,
-a:focus {
-  color: #000;
-}
-p a,
-p a:visited {
-  line-height: inherit;
-}
-/* #Lists
-================================================== */
-ul,
-ol {
-  margin-bottom: 20px;
-}
-ul {
-  list-style: none outside;
-}
-ol {
-  list-style: decimal;
-}
-ol,
-ul.square,
-ul.circle,
-ul.disc {
-  margin-left: 30px;
-}
-ul.square {
-  list-style: square outside;
-}
-ul.circle {
-  list-style: circle outside;
-}
-ul.disc {
-  list-style: disc outside;
-}
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin: 4px 0 5px 30px;
-  font-size: 90%;
-}
-ul ul li,
-ul ol li,
-ol ol li,
-ol ul li {
-  margin-bottom: 6px;
-}
-li {
-  line-height: 18px;
-  margin-bottom: 12px;
-}
-ul.large li {
-  line-height: 21px;
-}
-li p {
-  line-height: 21px;
-}
-/* #Images
-================================================== */
-img.scale-with-grid {
-  max-width: 100%;
-  height: auto;
-}
-/* #Buttons
-================================================== */
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  background: #eee;
-/* Old browsers */
-  border-radius: 3px;
-  color: #444;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 1px rgba(255,255,255,0.75);
-  cursor: pointer;
-  margin-bottom: 20px;
-  line-height: normal;
-  padding: 8px 10px;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: #222;
-  background: #ddd;
-/* Old browsers */
-}
-.button:active,
-button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
-  background: #ccc;
-/* Old browsers */
-}
-.button.full-width,
-button.full-width,
-input[type="submit"].full-width,
-input[type="reset"].full-width,
-input[type="button"].full-width {
-  width: 100%;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  text-align: center;
-}
-/* Fix for odd Mozilla border & padding issues */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-/* #Forms
-================================================== */
-form {
-  margin-bottom: 20px;
-}
-fieldset {
-  margin-bottom: 20px;
-}
-input[type="text"],
-input[type="password"],
-input[type="email"],
-textarea {
-  border: 1px solid #ccc;
-  padding: 6px 4px;
-  outline: none;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #777;
-  margin: 0;
-  width: 210px;
-  max-width: 100%;
-  display: block;
-  margin-bottom: 20px;
-  background: #fff;
-}
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border: 1px solid #aaa;
-  color: #444;
-  -moz-box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
-}
-textarea {
-  min-height: 60px;
-}
-label,
-legend {
-  display: block;
-  font-weight: bold;
-  font-size: 13px;
-}
-input[type="checkbox"] {
-  display: inline;
-}
-label span,
-legend span {
-  font-weight: normal;
-  font-size: 13px;
-  color: #444;
-}
-/* #Misc
-================================================== */
-.remove-bottom {
-  margin-bottom: 0 !important;
-}
-.half-bottom {
-  margin-bottom: 10px !important;
-}
-.add-bottom {
-  margin-bottom: 20px !important;
-}
 /* Theme General
 ================================================== */
 .tipsy {
@@ -450,9 +17,14 @@ legend span {
 }
 html {
   -webkit-font-smoothing: antialiased;
+  color: #4d4d4d;
+}
+body {
+  margin-left: 80px;
 }
 a {
   text-decoration: none;
+  color: #333;
 }
 h1,
 h2,
@@ -471,12 +43,6 @@ h4,
 h5,
 h6 {
   font-family: 'Droid Serif', Georgia, serif;
-}
-.admin-bar header.site-header {
-  top: 28px;
-}
-.admin-bar #main #primary {
-  padding-top: 34px;
 }
 .gallery {
   border: 1px solid #f1f1f1;
@@ -569,7 +135,8 @@ header.site-header .main-small-navigation ul {
   display: none;
 }
 header.site-header nav ul {
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 header.site-header nav ul li {
   margin-bottom: 0;
@@ -629,9 +196,15 @@ header.site-header .copyright:hover {
   background: #20d6ab;
   width: 260px;
   position: fixed;
+  margin: 0;
   padding: 10px 0;
   margin: 0;
   left: 80px;
+  top: 0;
+}
+#sidebar ul {
+  margin: 0;
+  padding: 0;
 }
 #sidebar li {
   margin: 0;
@@ -675,9 +248,6 @@ header.site-header .copyright:hover {
 .comments-area {
   padding-left: 80px;
 }
-body {
-  margin-left: 80px;
-}
 body .post-cover-image {
   height: 360px;
   background-size: cover;
@@ -700,9 +270,14 @@ body article.page {
 }
 body article.post,
 body article.page {
-  width: 540px;
+  width: 580px;
   margin: auto;
   padding-bottom: 100px;
+  font-size: 110%;
+}
+body article.post a,
+body article.page a {
+  color: #000;
 }
 body article.post .entry-header,
 body article.page .entry-header {
@@ -751,64 +326,6 @@ body article.page .entry-header .entry-title.link a:hover span {
 body article.post .entry-header .entry-title.link a.anchor:hover img,
 body article.page .entry-header .entry-title.link a.anchor:hover img {
   opacity: 1;
-}
-body article.post p,
-body article.page p,
-body article.post ul,
-body article.page ul,
-body article.post blockquote,
-body article.page blockquote,
-body article.post ol,
-body article.page ol,
-body article.post ol,
-body article.page ol,
-body article.post .prettify,
-body article.page .prettify {
-  margin: 20px 0;
-}
-body article.post p,
-body article.page p,
-body article.post ul,
-body article.page ul,
-body article.post hr,
-body article.page hr,
-body article.post .entry-title,
-body article.page .entry-title,
-body article.post ol,
-body article.page ol,
-body article.post p,
-body article.page p,
-body article.post li,
-body article.page li {
-  line-height: 27px;
-  font-size: 17px;
-  color: #4d4d4d;
-}
-body article.post ul,
-body article.page ul {
-  list-style: square;
-}
-body article.post ul,
-body article.page ul,
-body article.post ol,
-body article.page ol {
-  padding: 0;
-}
-body article.post ul ul,
-body article.page ul ul,
-body article.post ol ul,
-body article.page ol ul,
-body article.post ul ol,
-body article.page ul ol,
-body article.post ol ol,
-body article.page ol ol {
-  margin-left: 30px;
-}
-body article.post ul li,
-body article.page ul li,
-body article.post ol li,
-body article.page ol li {
-  margin: 5px 0;
 }
 body article.post blockquote,
 body article.page blockquote {
@@ -1048,12 +565,19 @@ body.single #main .content-area {
 }
 /* Specific styles for archives
 ================================================== */
-.content-archive article header.entry-header {
+body.archive .page-title {
+  padding-left: 0;
+}
+body.archive article {
+  margin: 0;
+  padding-bottom: 0;
+}
+body.archive article header.entry-header {
   border-bottom: 1px solid #f1f1f1;
   padding-bottom: 20px;
   margin: 0;
 }
-.content-archive article header.entry-header h1.entry-title {
+body.archive article header.entry-header h1.entry-title {
   font-size: 20px;
   line-height: 34px;
   margin-bottom: 10px;
