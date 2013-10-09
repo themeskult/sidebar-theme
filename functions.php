@@ -274,7 +274,7 @@ if ( !function_exists( 'optionsframework_init' ) ) {
     require_once OPTIONS_FRAMEWORK_DIRECTORY . 'options-framework.php';
 }
 
-// require get_template_directory() . '/inc/Theme-Updater/updater.php';
+require get_template_directory() . '/inc/Theme-Updater/updater.php';
 
 
 
